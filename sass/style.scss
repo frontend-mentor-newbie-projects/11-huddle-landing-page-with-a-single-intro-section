@@ -37,7 +37,13 @@ li {
 }
 
 /* Base + Font styles */
-/* -------------------- */
+body {
+    font-family: map-get($map: $body-font, $key: font-stack);
+
+    background:
+        url(../images/bg-mobile.svg) no-repeat 50%,
+        $primary-1;
+}
 
 // - Small mobile - 320px
 // - Medium mobile - 375px
