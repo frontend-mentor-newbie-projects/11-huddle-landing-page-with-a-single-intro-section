@@ -5,7 +5,14 @@
 // The foregoing remain constant throughout all styles specified for all screens.
 
 /* Global Varibables */
-/* -------------------- */
+$primary-1: hsl(257, 40%, 49%);
+$primary-2: hsl(300, 69%, 71%);
+
+$headings-font-stack: "Poppins";
+$body-font-stack: "Open Sans";
+
+$headings-font: ("font-stack": $headings-font-stack, "regular": 400, "semi-bold": 600);
+$body-font: ("font-stack": $body-font-stack, "regular": 400);
 
 /* Reset browser defaults */
 html {
