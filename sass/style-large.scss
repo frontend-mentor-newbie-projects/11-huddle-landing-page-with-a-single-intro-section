@@ -1,4 +1,131 @@
 /* Desktop styles -- The width of the screen is at least 1200px */
 @media screen and (min-width: 1200px){
+    // Layout styles
+    body {
+        display: block; // TODO: There's a weird gap at the bottom of the page
+
+        // display: flex;
+
+        // flex-flow: column nowrap;
+        // justify-content: center;
+        // align-items: center;
+
+        max-height: 100vh; // TODO: This usually breaks something
+
+        margin: 0 auto;
+        padding: 40px;
+    }
+    .container {
+        display: flex;
+
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: left;
     
+        max-width: 1280px;
+
+        margin: 0 auto;
+    }
+
+    // Base + Font styles
+    $primary-1: hsl(257, 40%, 49%);
+    $primary-2: hsl(300, 69%, 71%);
+
+    body {
+        background:
+        url(../images/bg-desktop.svg) no-repeat left center, // TODO: This is not it
+        $primary-1;
+    }
+
+    // Header styles
+    .container header {
+        // justify-content: left;
+
+        img {
+            width: 200px;
+
+            margin-bottom: 104px;
+        }
+    }
+
+    // Main styles
+    .container main {
+        display: grid;
+
+        grid-template-columns: 1fr 600px;
+        grid-template-rows: auto;
+        gap: 48px;
+
+        img {
+            grid-column: 1 / 2;
+            grid-row: 1 / -1;
+
+            width: auto;
+            height: 496px;
+
+            margin-bottom: 0;
+        }
+
+        #content {
+            grid-column: 2 / -1;
+            grid-row: 1 / -1;
+
+            align-self: center;
+
+            margin-top: 48px;
+        }
+
+        h1 {
+            font-size: 2.5rem; // TODO: The design states 2.5rem
+            text-align: left; // TODO: May need to add a line-height
+    
+            margin-bottom: 32px;
+        }
+
+        p {
+            font-size: 1.3rem;
+
+            line-height: 2rem; // TODO: I guessed this value
+            text-align: left;
+    
+            margin-bottom: 24px;
+        }
+    }
+
+    .container main #form-container {
+        justify-content: left;
+    
+        button {
+            font-weight: 600px;
+            font-size: 1rem;
+
+            width: 192px;
+            height: 56px;
+        }    
+    }
+
+    .container footer {
+        #social-icons {
+            position: relative;
+            float: right;
+
+            i {
+                color: white;
+                font-size: 16px; // TODO: The entire icon, including the border
+    
+                margin: 0 8px;
+            }
+    
+            .circle-icon {
+                background: none;
+                width: 40px;
+                height: 40px;
+                border: 1px solid white;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 40px;
+                vertical-align: middle;
+            }
+        }
+    }
 }

@@ -9,23 +9,56 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style-large.css" media="screen and (min-width: 1200px)">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/d8d1809782.js" crossorigin="anonymous"></script>
   
   <!-- Misc -->
   <title>Frontend Mentor | Huddle Landing Page with Single Introductory Section</title>
 
 </head>
 <body>
-  <img src="./images/logo.svg" alt="Logo">
+  <div class="container grid">
+    <!-- Header -->
+    <header>
+      <img src="./images/logo.svg" alt="Logo">
+    </header>
+  
+    <!-- Main -->
+    <main>
+      <img src="./images/illustration-mockups.svg" alt="Illustration">
 
-  <h1>Build The Community Your Fans Will Love</h1>
+      <div id="content">
+        <h1>Build The Community<br>Your Fans Will Love</h1>
 
-  <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+        <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+  
+        <div id="form-container">
+          <button>Register</button>
+        </div>
+      </div>
+    </main>
 
-  <button>Register</button>
+    <!-- Footer -->
+    <footer>
+      <!-- Social Icons -->
+      <div id="social-icons">
+        <i class="fab fa-facebook-f circle-icon"></i>
+        <!-- <i class="fa fa-circle fa-stack-2x icon-background"></i> -->
+  
+        <i class="fab fa-twitter circle-icon"></i>
+        <!-- <i class="fa fa-circle fa-stack-2x icon-background"></i> -->
+  
+        <i class="fab fa-instagram circle-icon"></i>
+        <!-- <i class="fa fa-circle fa-stack-2x icon-background"></i> -->
+      </div>
+    </footer>
+  </div>
 
   <!-- Footer -->
   <!-- <footer>

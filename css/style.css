@@ -23,12 +23,109 @@ li {
 
 /* Base + Font styles */
 body {
-  font-family: "Open Sans";
-  background: url(../images/bg-mobile.svg) no-repeat 50%, #674baf;
+  font-family: "Open Sans", sans-serif;
+  background: #674baf;
+}
+
+.container header img {
+  margin-bottom: 144px;
+  position: relative;
+  float: left;
+}
+
+.container main img {
+  height: 416px;
+  margin-bottom: 114px;
+}
+
+.container main h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.container main p {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.container main #form-container {
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  margin-bottom: 128px;
+}
+
+.container main #form-container button {
+  width: 70%;
+  height: 80px;
+  color: #674baf;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 3rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 2px 2px rgba(0, 0, 0, 0.05), 0 4px 4px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.05);
+}
+
+.container main #form-container button:hover {
+  background-color: #e882e8;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.container main #form-container button:focus {
+  outline: none;
+}
+
+.container main #form-container button:active {
+  outline: none;
+}
+
+.container footer #social-icons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.container footer #social-icons i {
+  color: white;
+  font-size: 24px;
+  margin: 0 16px;
+}
+
+.container footer #social-icons .circle-icon {
+  background: none;
+  width: 56px;
+  height: 56px;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 56px;
+  vertical-align: middle;
 }
 
 /* Mobile styles -- Starting point */
-/* -------------------- */
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 80px;
+}
+
+.container {
+  max-width: 592px;
+}
+
 /* Footer styles */
 .attribution {
   font-size: 11px;
